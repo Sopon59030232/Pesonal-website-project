@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content:center;
+}
+
+.container > section {
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    color: white;
+    background-color: slateblue;
+    margin: 20px;
+    width: 200px;
+    line-height: 200px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    text-align: center;
+}
