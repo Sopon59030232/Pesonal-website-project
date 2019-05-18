@@ -1,6 +1,74 @@
 #info{
-    background-color: blueviolet;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background-color: #aee0dd;
     margin: 0px;
     height: 762px;
     width: 100%;
+}
+
+.head_info {
+    display: flex;
+    justify-content: center;
+}
+
+#profile{
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border: 10px solid white;
+    border-radius: 50%;
+    box-shadow: 9px 9px #999;
+}
+
+.info_text{
+    display: flex;
+    justify-content: center;
+}
+
+#about_me{
+    font-family: monospace;
+    font-size: 18px; 
+    color: #313131;
+}
+
+/*Logo social button*/
+.logo {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    height: 100px;
+    background-color: #ffffff;
+    margin: 150px 0px 20px 0px;
+}
+
+.logo button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#logo_fac:hover {transform: translateY(-10px);}
+#logo_fac:active{
+    background-color: rgb(61, 121, 250);
+    box-shadow: 0px 10px 15px rgba(7, 107, 238, 0.521);
+    border-radius: 20px;
+}
+
+#logo_ins:hover {transform: translateY(-10px);}
+#logo_ins:active{
+    background-color: rgb(253, 137, 42);
+    box-shadow: 0px 15px 20px rgba(107, 10, 218, 0.534);
+    border-radius: 20px;
+}
+
+#logo_twi:hover {transform: translateY(-10px);}
+#logo_twi:active{
+    background-color: rgb(75, 213, 255);
+    box-shadow: 0px 15px 20px rgba(22, 155, 207, 0.63);
+    border-radius: 20px;
 }

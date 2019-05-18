@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Personal Web Designd</title>
+        <title>Personal Web Design</title>
         <meta charset="utf-8">
-        <script src="/script/power.js"></script>
+        <script src="/script/Page.js"></script>
         <link rel="stylesheet" href="./css/Home.css">
         <link rel="stylesheet" href="./css/Info.css">
+        <link rel="stylesheet" href="./css/Play.css">
+        <link rel="stylesheet" href="/css/Cerdit.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="Fullpage">
         <button onclick="topFunction()" id="myBtn_top" title="Go to top">Top</button>
 <!-- HOME PAGE -->
-        <section class="Home">
-            <header>
-                <p id="head">Universal Personal Website</p>
+        <section id="home">
+            <header class="head_home">
+                <p id="head_text">Personal Website</p>
                 <div class="menu">
-                    <button><span>Home</span></button>
-                    <button><span>Info</span></button>
-                    <button><span>Play</span></button>
+                    <a href="#info"><span>Info</span></a>
+                    <a href="#play"><span>Play</span></a>
+                    <a href="#credit"><span>Credit</span></a>
                 </div>
             </header>
             <main class="content">
-                <img src="./pictures/home_page.JPG" id="pic">
+                <div id="bg_clock"><span><canvas width="500" height="500" id="clockFace"></canvas></span></div>
+                <script src="/script/Clock.js"></script>
             </main>
-            <footer  class="logo">
-                <button onclick="window.location.href='https://web.facebook.com/sopon.grafity'"><img src="./pictures/facebook_logo.png" id="logo_fac"></button>
-                <button onclick="window.location.href='https://www.instagram.com/soponkmitl/?hl=th'"><img src="./pictures/instragram_logo.png" id="logo_ins"></button>
-                <button onclick="window.location.href='https://twitter.com/?lang=th'"><img src="./pictures/twitter_logo.png" id="logo_twi"></button>
-                <button onclick="window.location.href=''"><img src="./pictures/line_logo.png" id="logo_lin"></button>
+            <footer>
+                <a href="#info" id="arrow_down"></a>
             </footer>
         </section>
 <!-- INFO PAGE -->
-        <section id="info"></section>
+        <section id="info">
+            <header class="head_info">
+                <img src="/pictures/Profile.jpg" id="profile">
+            </header>
+            <main class="info_text">
+                <div>
+                    <p id="about_me">Name: Sopon Inkham  NO.59030232<br>
+                    Nickname: TOO <br>
+                    Adress : House-No. 8/9   Village No. 4   Rd.Petchkasem   Sub-area.Thatarad<br>
+                    area.Sampran 73110   province.Nakhonpathom</p>
+                </div>
+            </main>
+            <footer  class="logo">
+                <button onclick="window.location.href='https://web.facebook.com/sopon.grafity'" ><img src="./pictures/facebook_logo.png" id="logo_fac"></button>
+                <button onclick="window.location.href='https://www.instagram.com/soponkmitl/?hl=th'" ><img src="./pictures/instragram_logo.png" id="logo_ins"></button>
+                <button onclick="window.location.href='https://twitter.com/?lang=th'" ><img src="./pictures/twitter_logo.png" id="logo_twi"></button>
+            </footer>
+        </section>
 <!-- PLAY PAGE -->
-        <section id="play"></section>
+        <section id="play">
+            <canvas id="game"></canvas>
+            <script src="/script/Play.js"></script>
+        </section>
+<!-- CREDIT PAGE -->
+        <section id="credit"></section>
     </body>
 </html>

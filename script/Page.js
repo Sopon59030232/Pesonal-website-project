@@ -1,5 +1,5 @@
 
-//    animation_top
+//    action_top_page
 
 window.onscroll = function() {scrollFunction()};
 
