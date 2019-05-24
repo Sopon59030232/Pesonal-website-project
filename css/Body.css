@@ -1,0 +1,43 @@
+html{scroll-behavior: smooth;}
+.Fullpage{margin: 0px;}
+body section{
+    height: 762px;
+    width: 100%;
+}
+
+#mySidenav a {
+    position: fixed;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: monospace;
+    color: #000000;
+    border-radius: 0 8px 8px 0;
+    border: 3px solid white;
+    border-left-width: 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.460);
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+  
+#Home_side {
+    top: 300px;
+    background-color: #e6aecf; 
+}
+  
+#Info_side {
+    top: 360px;
+    background-color: #aee0dd;
+}
+  
+#Play_side {
+    top: 420px;
+    background-color: #faa98b;
+}
+
+  
