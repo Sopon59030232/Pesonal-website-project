@@ -69,6 +69,7 @@
     height: 100%;
     width: 100%;
     margin: 0px;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.548);
     box-shadow: 5px 10px 15px rgba(63, 63, 63, 0.26);
@@ -83,7 +84,7 @@
     margin: auto 50px auto 97px;
     background-color: #aee0dd;
 }
-
+ /*Date of main Home page*/
 .date{
     margin: auto;
     font-family: monospace;
@@ -99,7 +100,7 @@
 }
 
 /*--------------------------------------------------Footer home page*/
-/*Arrown down*/
+/*Arrown scroll down page*/
 footer{
     display: flex;
     flex-direction: column;

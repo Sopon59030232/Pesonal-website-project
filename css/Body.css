@@ -1,10 +1,12 @@
+ /*--------------------------------------------------Main Full page setting*/
+
 html{scroll-behavior: smooth;}
 .Fullpage{margin: 0px;}
 body section{
     height: 762px;
     width: 100%;
 }
-
+ /*--------------------------------------------------mySidenav Menu to all page*/
 #mySidenav a {
     position: fixed;
     left: -100px;
@@ -39,5 +41,50 @@ body section{
     top: 420px;
     background-color: #faa98b;
 }
-
   
+#Credit_side {
+    top: 480px;
+    background-color: #a8a8a8;
+}
+/*--------------------------------------------------Credit bottom page */
+#credit{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    background-color: #ffffff;
+    margin: 0px;
+    height: 120px;
+    width: 100%;
+}
+
+#logo_credit{
+    display: grid;
+    grid-template-columns: 200px 200px 100px;
+    justify-content: center;
+    grid-gap: 40px;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#credit_w3s{
+    height: 90%;
+    width: 100%;
+}
+
+#credit_codepen{
+    height: 90%;
+    width: 100%;
+}
+
+#credit_github{
+    height: 90%;
+    width: 100%;
+}
+
+#power{
+    margin-top: 40px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 16px;
+}

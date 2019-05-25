@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Web Design</title>
+        <meta charset="utf-8">
+        <script src="/script/Full_java.js"></script>
+        <link rel="stylesheet" href="/css/Body.css">
+        <link rel="stylesheet" href="./css/Home.css">
+        <link rel="stylesheet" href="./css/Info.css">
+        <link rel="stylesheet" href="./css/Play.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="Fullpage">
+<!-- Nav bar -->
+        <div id="mySidenav"> 
+            <a href="#home" id="Home_side">Home</a>
+            <a href="#info" id="Info_side">Info</a>
+            <a href="#play" id="Play_side">Play</a>
+            <a href="#credit" id="Credit_side">Credit</a>
+        </div>          
+<!-- HOME PAGE -->
+        <section id="home">
+            <header class="head_home">
+                <p id="head_text">Personal Website</p>
+                <div class="menu">
+                    <a href="#info">Info</a>
+                    <a href="#play">Play</a>
+                    <a href="#credit">Credit</a>
+                </div>
+            </header>
+            <main class="content">
+                <div id="bg_clock"><canvas height="450" width="450" id="clockFace"></canvas></div>
+                <div class="date">
+                    <p id="txt_day">day</p>
+                    <p id="txt_date">date</p>
+                </div>
+                <script src="/script/Clock.js"></script>
+            </main>
+            <footer>
+                <a href="#info" id="arrow_down"></a>
+                <p>Scroll</p>
+            </footer>
+        </section>
+<!-- INFO PAGE -->
+        <section id="info">
+            <header class="head_info">
+                <img src="/pictures/Profile.jpg" id="profile">
+            </header>
+            <main class="info_text">
+                <p id="about_me">
+                    <b>Name:</b> Sopon Inkham  NO.59030232<br>
+                    <b>Nickname:</b> TOO <br>
+                    <b>Age :</b> 21 <br>
+                    <b>Adress :</b> House-No. 8/9   Village No. 4   Rd.Petchkasem   Sub-area.Thatarad<br>
+                    &nbsp;  &nbsp;  &nbsp;  &nbsp; area.Sampran 73110   province.Nakhonpathom<br>
+                    <b>Study at :</b>Faculty of Industrial Education and Technology<br>
+                    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;King Mongkut's Institute of Technology Ladkrabang<br>
+                    <b>SKill :</b> Guitarlist(band) <br>
+                    <b>freetime : </b> composer and musician band<br>
+                </p>
+            </main>
+            <footer  class="logo">
+                <button onclick="window.location.href='https://web.facebook.com/sopon.grafity'" ><img src="./pictures/facebook_logo.png" id="logo_fac"></button>
+                <button onclick="window.location.href='https://www.instagram.com/soponkmitl/?hl=th'" ><img src="./pictures/instragram_logo.png" id="logo_ins"></button>
+                <button onclick="window.location.href='https://twitter.com/?lang=th'" ><img src="./pictures/twitter_logo.png" id="logo_twi"></button>
+                <button onclick="window.location.href='https://www.youtube.com/channel/UCm5so6uhLMTm6LTA7S0qXFw?view_as=subscriber'" ><img src="./pictures/youtube.png" id="logo_you"></button>
+            </footer>
+        </section>
+<!-- PLAY PAGE -->
+        <section id="play">
+            <p id="head_game">Choose to Play Game</p>
+            <div class="btn_game">
+                <div class="btn_shipgame">
+                    <button id="ship" onclick="window.location.href = '/Shipgame_page.html'"><img src="/pictures/ship.png"></button>
+                    <p id="txt_ship">WarShip</p>
+                </div>
+                <div class="btn_snakegame">
+                    <button id="snake" onclick="window.location.href = '/Snakegame_page.html'"><img src="/pictures/snake.png"></button>
+                    <p id="txt_snake">Snack by patorjk</p>
+                </div>
+            </div>
+        </section>
+<!-- CREDIT PAGE -->
+        <section id="credit">
+            <div id="logo_credit">
+                <img src="/pictures/W3Schools_logo.png" id="credit_w3s">
+                <img src="/pictures/codepen.png" id="credit_codepen">
+                <img src="/pictures/GitHub_Logo.png" id="credit_github">
+            </div>
+            <p id="power">Power by I.sopon</p>    
+        </section>
+    </body>
+</html>
